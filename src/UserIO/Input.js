@@ -2,7 +2,7 @@ import React from 'react';
 
 const input = (props) => {
     const inputStyle = {
-        border: '2px solid red',
+        border: '1px solid black',
         padding: '5px',
         margin: '5px'
     };
@@ -23,7 +23,7 @@ const input = (props) => {
             //onChange={this.handleInputChange} 
             />
             </p>
-            <p>I confirm i do not have a cough<input
+            <p>I confirm I do not have new, continuous cough<input
             name="symptoms"
             type="checkbox"
             //checked={this.state.isGoing}

@@ -23,7 +23,7 @@ const api = (name) => {
     amazonAPI = amazonAPI + name + '&city=12/08/1964'
     axios.get(amazonAPI)
       .then(response => {
-        console.log(response)
+        //console.log(response)
       });
       return (null)
     }
