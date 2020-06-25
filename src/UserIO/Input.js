@@ -29,6 +29,10 @@ const input = (props) => {
             //checked={this.state.isGoing}
             //onChange={this.handleInputChange} 
             /></p>
+            <p>I confirm that I do not have a loss or change to your sense of smell or taste<input
+            name="smell"
+            type="checkbox"
+            /></p>
             
         </div>
     )

@@ -15,7 +15,7 @@ class App extends Component {
     person: 
       {
         name: 'Firstname  Lastname',
-        date: '17/05/2020',
+        calendar: '17/05/2020',
         temperature: false,
         cough: false,
         smell: false,
@@ -27,6 +27,12 @@ class App extends Component {
 
   
   inputNameHandler = (newName) => {
+    
+     // this is only working on the secon call it needs to be moved somewhere else   
+      this.setState({
+        calendar: new Date().toLocaleString()
+      });
+      console.log(this.state.calendar);
        this.setState({
       person: 
       // set date somewhere here!! It's disappearing from the string setting
@@ -49,7 +55,6 @@ class App extends Component {
     return (
       <div className="App">
         <ol>
-        
         </ol>
         
         
@@ -58,11 +63,13 @@ class App extends Component {
         currentName={this.state.person.name}
         ></Input>
         <Output name={this.state.person.name}
-        click={this.inputNameHandler.bind(this, 'name changed')}
+        //click={this.inputNameHandler.bind(this, 'name changed')}
         date = {this.state.person.date}
         otherstate={this.testAPI}
         />
+        
         <button
+        //<a href="#" onClick={() => { func1(); func2();}}>Test Link</a>
         onClick={this.inputNameHandler.bind(this, this.state.person.name)}
         >Press to submit
         </button>
