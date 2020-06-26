@@ -31,15 +31,9 @@ class App extends Component {
 
     let tempDate = new Date().toLocaleString()
     console.log('Debug tempDate:', tempDate);
-     // this is only working on the second call it needs to be moved somewhere else   
-      this.setState({theDate : tempDate});
        
-    
-     // this is only working on the secon call it needs to be moved somewhere else   
-      // this.setState({
-        
-      //   calendar: new Date().toLocaleString()
-      // });
+      this.setState({theDate : tempDate});
+  
       console.log('Debug: Time Branch 2nd commit ',this.state.theDate);
        this.setState({
       person: 
