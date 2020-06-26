@@ -33,7 +33,7 @@ class App extends Component {
         
         calendar: new Date().toLocaleString()
       });
-      console.log('Debug: Time Branch ',this.state.calendar);
+      console.log('Debug: Time Branch 2nd commit ',this.state.calendar);
        this.setState({
       person: 
       // set date somewhere here!! It's disappearing from the string setting
