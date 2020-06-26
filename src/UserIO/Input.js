@@ -15,24 +15,8 @@ const input = (props) => {
                 style={inputStyle}
                 onChange={props.changed} 
                 value={props.currentName}/></p>
-            <p>Tick the following boxes to confirm</p>
-            <p>I confirm I do not have a high temperature<input
-            name="temperature"
-            type="checkbox"
-            //checked={this.state.isGoing}
-            //onChange={this.handleInputChange} 
-            />
-            </p>
-            <p>I confirm I do not have new, continuous cough<input
-            name="symptoms"
-            type="checkbox"
-            //checked={this.state.isGoing}
-            //onChange={this.handleInputChange} 
-            /></p>
-            <p>I confirm that I do not have a loss or change to your sense of smell or taste<input
-            name="smell"
-            type="checkbox"
-            /></p>
+            
+            <p>I confirm I do not have a high temperature, a new continuous cough or a loss or change to my sense of smell or taste</p>
             
         </div>
     )
