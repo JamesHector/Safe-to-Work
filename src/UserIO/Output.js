@@ -5,7 +5,7 @@ import './Output.css';
 const output = (props) => {
     return (
         <div className="Output">
-            <p onClick={props.click}>I confirm that {props.name} is entering these details and they are correct on {props.date}.</p>
+            <p onClick={props.click}>I confirm that {props.name} is entering these details and they are correct on {props.date} and is therefore safe to come to work.</p>
                         
         </div>
     )

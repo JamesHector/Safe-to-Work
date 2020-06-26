@@ -16,7 +16,7 @@ const input = (props) => {
                 onChange={props.changed} 
                 value={props.currentName}/></p>
             
-            <p>I confirm I do not have a high temperature, a new continuous cough or a loss or change to my sense of smell or taste</p>
+            <p>I confirm I do not have the following main symptoms of coronavirus (COVID-19). A high temperature, a new continuous cough or a loss or change to my sense of smell or taste.</p>
             
         </div>
     )
