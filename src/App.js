@@ -12,10 +12,11 @@ import Api from './Api/Api'
 
 class App extends Component {
   state = {
+    theDate: '26-06-2020',
     person: 
       {
         name: 'Firstname  Lastname',
-        calendar: '17/05/2020',
+        calendar: 'new Date().toLocaleString()',
         temperature: false,
         cough: false,
         smell: false,
@@ -27,13 +28,19 @@ class App extends Component {
 
   
   inputNameHandler = (newName) => {
+
+    let tempDate = new Date().toLocaleString()
+    console.log('Debug tempDate:', tempDate);
+     // this is only working on the second call it needs to be moved somewhere else   
+      this.setState({theDate : tempDate});
+       
     
      // this is only working on the secon call it needs to be moved somewhere else   
-      this.setState({
+      // this.setState({
         
-        calendar: new Date().toLocaleString()
-      });
-      console.log('Debug: Time Branch 2nd commit ',this.state.calendar);
+      //   calendar: new Date().toLocaleString()
+      // });
+      console.log('Debug: Time Branch 2nd commit ',this.state.theDate);
        this.setState({
       person: 
       // set date somewhere here!! It's disappearing from the string setting
@@ -65,7 +72,7 @@ class App extends Component {
         ></Input>
         <Output name={this.state.person.name}
         //click={this.inputNameHandler.bind(this, 'name changed')}
-        date = {this.state.person.date}
+        date = {this.state.theDate}
         otherstate={this.testAPI}
         />
         
