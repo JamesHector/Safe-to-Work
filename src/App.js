@@ -30,9 +30,10 @@ class App extends Component {
     
      // this is only working on the secon call it needs to be moved somewhere else   
       this.setState({
+        
         calendar: new Date().toLocaleString()
       });
-      console.log(this.state.calendar);
+      console.log('Debug: Time Branch ',this.state.calendar);
        this.setState({
       person: 
       // set date somewhere here!! It's disappearing from the string setting
